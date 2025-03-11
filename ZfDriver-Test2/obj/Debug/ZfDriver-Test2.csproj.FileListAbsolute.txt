@@ -1,0 +1,11 @@
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver\x64\Debug\ZfDriver-R0.sys
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver\x64\Debug\ZfDriver-Test2.exe.config
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver\x64\Debug\ZfDriver-Test2.exe
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver\x64\Debug\ZfDriver-Test2.pdb
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver-Test2\obj\Debug\ZfDriver-Test2.csproj.AssemblyReference.cache
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver-Test2\obj\Debug\ZfDriver_Test2.Form1.resources
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver-Test2\obj\Debug\ZfDriver_Test2.Properties.Resources.resources
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver-Test2\obj\Debug\ZfDriver-Test2.csproj.GenerateResource.cache
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver-Test2\obj\Debug\ZfDriver-Test2.csproj.CoreCompileInputs.cache
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver-Test2\obj\Debug\ZfDriver-Test2.exe
+E:\Projects\HelloBlazor\ZfDriver\ZfDriver-Test2\obj\Debug\ZfDriver-Test2.pdb

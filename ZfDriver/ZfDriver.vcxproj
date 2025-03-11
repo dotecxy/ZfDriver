@@ -34,6 +34,7 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="ZfDriver.h" />
+    <ClInclude Include="ZfDriverAPI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="D3D.cpp" />
@@ -50,6 +51,7 @@
     <ClCompile Include="IoctlUtils.h" />
     <ClCompile Include="Utils.cpp" />
     <ClCompile Include="ZfDriver.cpp" />
+    <ClCompile Include="ZfDriverAPI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ZfDriver.rc" />

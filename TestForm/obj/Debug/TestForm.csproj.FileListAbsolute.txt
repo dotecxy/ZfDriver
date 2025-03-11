@@ -1,0 +1,10 @@
+E:\Projects\HelloBlazor\ZfDriver\TestForm\bin\Debug\TestForm.exe.config
+E:\Projects\HelloBlazor\ZfDriver\TestForm\bin\Debug\TestForm.exe
+E:\Projects\HelloBlazor\ZfDriver\TestForm\bin\Debug\TestForm.pdb
+E:\Projects\HelloBlazor\ZfDriver\TestForm\obj\Debug\TestForm.csproj.AssemblyReference.cache
+E:\Projects\HelloBlazor\ZfDriver\TestForm\obj\Debug\TestForm.Form1.resources
+E:\Projects\HelloBlazor\ZfDriver\TestForm\obj\Debug\TestForm.Properties.Resources.resources
+E:\Projects\HelloBlazor\ZfDriver\TestForm\obj\Debug\TestForm.csproj.GenerateResource.cache
+E:\Projects\HelloBlazor\ZfDriver\TestForm\obj\Debug\TestForm.csproj.CoreCompileInputs.cache
+E:\Projects\HelloBlazor\ZfDriver\TestForm\obj\Debug\TestForm.exe
+E:\Projects\HelloBlazor\ZfDriver\TestForm\obj\Debug\TestForm.pdb

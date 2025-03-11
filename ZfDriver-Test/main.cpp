@@ -1,5 +1,6 @@
 #include <iostream>
 #include "ZfDriver.h"
+#include <cassert>
 
 #pragma comment(lib,"ZfDriver.lib")
 
@@ -9,7 +10,7 @@ static VOID D3DDrawLoop()
 	ZfDriver::D3DDrawFps(24);
 	ZfDriver::D3DDrawRect(100, 100, 100, 100, 2, D3DCOLOR_RGB(255, 0, 0));
 	ZfDriver::D3DDrawRectFill(500, 500, 200, 200, D3DCOLOR_RGB(0, 0, 255));
-	ZfDriver::D3DDrawText(0, 0, L"∑…∏ÁªÊ÷∆", D3DCOLOR_RGB(255, 255, 0), 24);
+	ZfDriver::D3DDrawText(0, 0, L"test", D3DCOLOR_RGB(255, 255, 0), 24);
 	ZfDriver::D3DDrawCircle(300, 100, 50, D3DCOLOR_RGB(0, 255, 0), 8, 2);
 	ZfDriver::D3DDrawLine(300, 100, 500, 500, 1, D3DCOLOR_RGB(0, 255, 255));
 }
@@ -19,24 +20,30 @@ static VOID IMGDrawLoop()
 	ZfDriver::IMGDrawFps();
 	ZfDriver::IMGDrawRect(100, 100, 100, 100, 2, IMGCOLOR(255, 0, 0));
 	ZfDriver::IMGDrawRectFill(500, 500, 200, 200, IMGCOLOR(0, 0, 255));
-	ZfDriver::IMGDrawText(0, 0, L"∑…∏ÁªÊ÷∆", IMGCOLOR(255, 255, 0));
+	ZfDriver::IMGDrawText(0, 0, L"test", IMGCOLOR(255, 255, 0));
 	ZfDriver::IMGDrawCircle(300, 100, 50, IMGCOLOR(0, 255, 0), 8, 2);
 	ZfDriver::IMGDrawLine(300, 100, 500, 500, 1, IMGCOLOR(0, 255, 255));
 }
 
 int main(void)
 {
-	ZfDriver::Install();
-
+	ZfDriver::Uninstall();
+	ZfDriver::Install(); 
 	// Test
-	//DWORD num = 1;
-	//std::cout << ZfDriver::Test(num) << std::endl;
+	DWORD num = 1;
+	std::cout << ZfDriver::Test(num) << std::endl;
 
 	//// Read
-	//ZfDriver::ReadBytes(5692, 0x000C6F38, sizeof(DWORD), (BYTE*)&num);
-	//std::cout << num << std::endl;
+	ZfDriver::ReadBytes(8308, 0x2139947d310, sizeof(DWORD), (BYTE*)&num);
+	std::cout << num << std::endl; 
+	////// Write
 
-	//// Write
+	num--;
+	ZfDriver::WriteBytes(8308, 0x2139947d310, sizeof(DWORD), (BYTE*)&num);
+	ZfDriver::ReadBytes(8308, 0x2139947d310, sizeof(DWORD), (BYTE*)&num);
+	std::cout << num << std::endl; 
+
+
 	//num--;
 	//DWORD pid = ZfDriver::GetProcessId(L"explorer.exe");
 	//ZfDriver::WriteBytes(pid, 0x000C6F38, sizeof(DWORD), (BYTE*)&num);
@@ -92,7 +99,8 @@ int main(void)
 	//}
 
 	// Draw
-	BOOL init = ZfDriver::IMGDrawInit(IMGDrawLoop, 32);
+	//BOOL init = ZfDriver::IMGDrawInit(IMGDrawLoop, 32);
+	BOOL init = true;
 	if (init)
 	{
 		std::cout << "Draw inited." << std::endl;
